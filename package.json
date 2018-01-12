@@ -1,0 +1,49 @@
+{
+  "name": "metricologist",
+  "version": "1.0.0",
+  "description": "CloudWatch Metric Collecting helper library",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "nyc --all --reporter=lcov mocha test --exit && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdgamble/metricologist.git"
+  },
+  "keywords": [
+    "CloudWatch",
+    "metric",
+    "collector",
+    "aws",
+    "nodejs"
+  ],
+  "contributers": [
+    "Bryan Gamble <bryan.d.gamble@gmail.com>",
+    "Anton Bazhal <am.bazhal@gmail.com>",
+    "Alex Murashkin"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdgamble/metricologist/issues"
+  },
+  "homepage": "https://github.com/bdgamble/metricologist#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-subset": "^1.6.0",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "mocha": "^4.0.1",
+    "nyc": "^11.4.1",
+    "sinon": "^4.0.1",
+    "uuid": "^3.1.0"
+  },
+  "dependencies": {
+    "aws-sdk": "2.x",
+    "bluebird": "3.x",
+    "chunk": "0.x"
+  }
+}
